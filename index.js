@@ -25,7 +25,6 @@ renderSchemeSelection()
 // Render Color Schemes
 const renderColorSchemes = (colors) => {
     let schemes = ''
-    console.log(colors)
     colors.forEach((color) => {
         schemes += `
             <div>${color.hex.value}</div>
@@ -42,7 +41,6 @@ document.addEventListener("submit", (e) => {
         seedColor: seedColorData.get('seed-color').slice(1),
         schemeMode: seedColorData.get('scheme-mode')
     }
-    console.log(colorConfig)
     getSchemes()
 })
 
