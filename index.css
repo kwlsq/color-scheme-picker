@@ -51,15 +51,19 @@ form {
 .btn-submit {
     border-radius: 4px;
     background-color: transparent;
-    font-size: 0.75rem;
 }
 
-.color-scheme{
+.color-scheme {
     display: flex;
     min-height: 500px;
 }
 
-.color-scheme-wrapper{
+.btn-submit,
+.color-scheme-wrapper {
+    font-size: 0.75rem;
+}
+
+.color-scheme-wrapper {
     display: flex;
     flex-direction: column;
     width: 20%;
