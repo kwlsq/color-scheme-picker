@@ -5,7 +5,7 @@ const schemeModes = [
 const baseURL = "https://www.thecolorapi.com"
 const form = document.getElementById("form")
 let colorConfig = {
-    seedColor: '00000',
+    seedColor: 'FF0000',
     schemeMode: 'monochrome'
 }
 
@@ -27,7 +27,10 @@ const renderColorSchemes = (colors) => {
     let schemes = ''
     colors.forEach((color) => {
         schemes += `
-            <div>${color.hex.value}</div>
+        <div class="color-scheme-wrapper">
+            <div class="color-scheme" style="background-color:${color.hex.value};"></div>
+            <p>${color.hex.value}</p>
+        </div>
         `
     })
     document.getElementById('color-scheme').innerHTML = schemes

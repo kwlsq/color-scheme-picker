@@ -54,6 +54,19 @@ form {
     font-size: 0.75rem;
 }
 
+.color-scheme{
+    display: flex;
+    min-height: 500px;
+}
+
+.color-scheme-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    font-weight: 500;
+}
+
 
 @media (min-width:720px) {
     main {
